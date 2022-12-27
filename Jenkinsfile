@@ -20,7 +20,7 @@ pipeline {
         stage('4. Docker Image') {
             steps {
                 script {
-                    imageName = docker.build "divyeshradadiya/miniProjectDevops:latest"
+                    imageName = docker.build "divyeshradadiya/miniprojectdevops:latest"
                 }
             }
         }
