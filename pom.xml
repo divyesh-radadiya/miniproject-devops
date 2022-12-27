@@ -11,7 +11,7 @@
     <groupId>com.example</groupId>
     <artifactId>miniproject-devops</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>miniproject-devops</name>
     <description>miniproject-devops</description>
     <properties>
