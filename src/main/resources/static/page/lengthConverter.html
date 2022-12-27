@@ -1,0 +1,82 @@
+
+
+
+
+      <!DOCTYPE html>
+      <html lang="en" dir="ltr">
+      <head>
+       <meta charset="utf-8">
+       <title>  Length Converter </title>
+       <link rel="stylesheet" href="../css/styles.css">
+      </head>
+      <body>
+
+      <table  class = "converters">
+       <tr>
+        <td colspan = "2">
+         <table class = "smallConverters" >
+          <tr>
+           <td style="color:white;text-align:center;font-family: 'Orbitron', sans-serif;font-size: 30px;">
+            Length Converter
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+
+       <tr>
+        <td>
+         <table class = "converters" >
+          <tr>
+           <td colspan = "2" >
+            <select name="speedTo" id="speedTo" class = "select-box" onchange="lengthConverter12()">
+             <option value="Meters" >Meters</option>
+             <option value="cm">cm</option>
+             <option value="Feet">Feet</option>
+             <option value="Inches" >Inches</option>
+             <option value="Yards">Yards</option>
+             <option value="Miles">Miles</option>
+            </select>
+           </td>
+          </tr>
+          <tr>
+           <td > <input class = "display-box" type = number id = "result1" oninput="lengthConverter12()" onchange="lengthConverter12()" /> </td>
+
+           <td> <input class = "clButton" type = "button" value = "Clear" onclick = "clearScreen1()" style = "background-color: #fb0066;" /> </td>
+          </tr>
+
+         </table>
+        </td>
+        <td>
+         <table class = "converters" >
+          <tr>
+           <td colspan = "2">
+            <select name="speedTo" id="speedFrom" class = "select-box" onchange="lengthConverter21()">
+             <option value="Meters" >Meters</option>
+             <option value="cm">cm</option>
+             <option value="Feet">Feet</option>
+             <option value="Inches" >Inches</option>
+             <option value="Yards">Yards</option>
+             <option value="Miles">Miles</option>
+            </select>
+
+           </td>
+          </tr>
+          <tr>
+           <td > <input class = "display-box" type = number id = "result2" oninput="lengthConverter21()" onchange="lengthConverter21()"  /> </td>
+           <!-- clearScreen() function clear all the values -->
+           <td> <input class = "clButton" type = "button" value = "Clear" onclick = "clearScreen2()" style = "background-color: #fb0066;" /> </td>
+          </tr>
+
+         </table>
+        </td>
+
+       </tr>
+
+
+
+
+      </table>
+      <script type="text/javascript" src="../js/script.js"></script>
+      </body>
+      </html>

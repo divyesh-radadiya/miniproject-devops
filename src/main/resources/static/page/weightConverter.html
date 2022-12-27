@@ -1,0 +1,76 @@
+      <!DOCTYPE html>
+      <html lang="en" dir="ltr">
+      <head>
+       <meta charset="utf-8">
+       <title>  Weight Converter </title>
+       <link rel="stylesheet" href="../css/styles.css">
+      </head>
+      <body>
+
+      <table  class = "converters">
+       <tr>
+        <td colspan = "2">
+         <table class = "smallConverters" >
+          <tr>
+           <td style="color:white;text-align:center;font-family: 'Orbitron', sans-serif;font-size: 30px;">
+            Weight Converter
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+
+       <tr>
+        <td>
+         <table class = "converters" >
+          <tr>
+           <td colspan = "2" >
+            <select name="speedTo" id="speedTo" class = "select-box" onchange="weightConverter12()">
+             <option value="Grams" >Grams</option>
+             <option value="Kilograms">Kilograms</option>
+             <option value="Pounds">Pounds</option>
+             <option value="Ounces">Ounces</option>
+             <option value="Stones">Stones</option>
+            </select>
+           </td>
+          </tr>
+          <tr>
+           <td > <input class = "display-box" type = number id = "result1" oninput="weightConverter12()" onchange="weightConverter12()" /> </td>
+
+           <td> <input class = "clButton" type = "button" value = "Clear" onclick = "clearScreen1()" style = "background-color: #fb0066;" /> </td>
+          </tr>
+
+         </table>
+        </td>
+        <td>
+         <table class = "converters" >
+          <tr>
+           <td colspan = "2">
+            <select name="speedTo" id="speedFrom" class = "select-box" onchange="weightConverter21()">
+             <option value="Grams" >Grams</option>
+             <option value="Kilograms">Kilograms</option>
+             <option value="Pounds">Pounds</option>
+             <option value="Ounces">Ounces</option>
+             <option value="Stones">Stones</option>
+            </select>
+
+           </td>
+          </tr>
+          <tr>
+           <td > <input class = "display-box" type = number id = "result2" oninput="weightConverter21()" onchange="weightConverter21()"  /> </td>
+           <!-- clearScreen() function clear all the values -->
+           <td> <input class = "clButton" type = "button" value = "Clear" onclick = "clearScreen2()" style = "background-color: #fb0066;" /> </td>
+          </tr>
+
+         </table>
+        </td>
+
+       </tr>
+
+
+
+
+      </table>
+      <script type="text/javascript" src="../js/script.js"></script>
+      </body>
+      </html>
