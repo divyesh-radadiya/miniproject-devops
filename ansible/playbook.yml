@@ -1,0 +1,19 @@
+---
+- name: Pull and Run docker image of divyeshradadiya/miniprojectdevops
+  hosts: all
+  tasks:
+    - name: remove stopped container
+      shell: docker rm -vf $(docker ps -aq) || true
+
+    - name: remove docker images
+      shell: docker rmi -f $(docker images -aq) || true
+
+    - name: Pull divyeshradadiya/miniprojectdevops image
+      docker_image:
+          name: divyeshradadiya/miniprojectdevops
+          source: pull
+
+    - name: create web container
+      shell: docker run -d -p 8081:8081 --name newminiprojectdevops divyeshradadiya/miniprojectdevops
+
+        
